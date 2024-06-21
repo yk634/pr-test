@@ -1,7 +1,7 @@
 jobs:
   hoge:
     requires: [ ~pr, ~commit ]
-    image: node:18
+    image: centos:7
     steps:
       - echo: |
             [ $((RANDOM % 2)) -eq 0 ] && exit 1 || echo "hoge"
